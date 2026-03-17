@@ -1,12 +1,10 @@
 package com.khojBackendNew.khojJavaBackend.ModelClass;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import org.springframework.data.repository.query.Param;
 
 @Entity
+@Table(name = "users")  // ✅ This tells Hibernate to use only 'users' table
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

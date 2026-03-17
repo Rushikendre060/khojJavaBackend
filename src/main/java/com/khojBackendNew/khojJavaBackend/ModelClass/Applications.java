@@ -1,11 +1,9 @@
 package com.khojBackendNew.khojJavaBackend.ModelClass;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "applications")
 public class Applications {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
